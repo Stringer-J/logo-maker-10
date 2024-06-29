@@ -1,12 +1,17 @@
 const inquirer = require('inquirer');
+const MaxLengthInputPrompt = require('inquirer-maxlength-input-prompt');
+inquirer.registerPrompt('maxlength-input', MaxLengthInputPrompt);
 const fs = require('fs');
+
+const generateSVG = () => ``;
 
 inquirer
     .prompt([
     {
-        type: 'input',
+        type: 'maxlength-input',
         name: 'text',
-        message: 'What will your logo say?'
+        message: 'What will your logo say?',
+        maxLength: 3
     },
     {
         type: 'input',
@@ -25,5 +30,7 @@ inquirer
         message: 'What color will the shape be?'
     }
 ]).then((data) => {
-    console.log(data);
+    const svgContent = generateSVG(data);
+
+    fs.writeFile('./examples/logo.svg', svgContent, (err) => err ? console.log(err) : console.log('Generated logo.svg'));
 });

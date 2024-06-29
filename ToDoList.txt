@@ -1,0 +1,20 @@
+1. Prompt to enter text DONE
+    -should cap text at 3 characters DONE
+
+2. Prompt for text color DONE
+    -color keyword or hexidecimal number
+    
+3. Prompt for a shape DONE
+    -list should only contain circle, triangle, square DONE
+
+4. Prompt for shape's color DONE
+    -color keyword or hexidecimal number
+
+5. Create SVG file
+    -file should be called 'logo.svg'
+    -output text 'Generated logo.svg' is printed in command line
+
+6. File size should be 300x200 px
+
+7. Install Jest DONE
+    -figure out how to use it

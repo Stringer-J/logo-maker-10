@@ -10,9 +10,9 @@
 4. Prompt for shape's color DONE
     -color keyword or hexidecimal number
 
-5. Create SVG file
-    -file should be called 'logo.svg'
-    -output text 'Generated logo.svg' is printed in command line
+5. Create SVG file DONE
+    -file should be called 'logo.svg' DONE
+    -output text 'Generated logo.svg' is printed in command line DONE
 
 6. File size should be 300x200 px
 

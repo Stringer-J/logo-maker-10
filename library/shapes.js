@@ -1,6 +1,11 @@
 class Circle {
-    constructor() {
-
+    constructor(cx, cy, r) {
+        this.cx = cx;
+        this.cy = cy;
+        this.r = r;
+    }
+    makeCircle() {
+        return `<circle cx="${this.cx}" cy="${this.cy}" r="${this.r}" />`;
     }
 };
 
@@ -15,3 +20,5 @@ class Square {
         
     }
 };
+
+module.exports = {Circle, Triangle, Square};

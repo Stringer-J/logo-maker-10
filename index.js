@@ -9,11 +9,11 @@ const fs = require('fs');
 const {Circle, Triangle, Square} = require('./library/shapes.js');
 const circle = new Circle(50, 50, 30);
 const triangle = new Triangle(50, 10, 85, 90, 15, 90);
-const square = new Square();
+const square = new Square(30, 30, 50);
 
 const generateSVG = () =>  //function that will eventually create the logo
     `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-    ${triangle.makeTriangle()}
+    ${square.makeSquare()}
     </svg>`;
 
 inquirer

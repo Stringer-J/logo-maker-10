@@ -24,8 +24,13 @@ class Triangle {
 };
 
 class Square {
-    constructor() {
-        
+    constructor(x, y, sidelength) {
+        this.x = x;
+        this.y = y;
+        this.sidelength = sidelength;
+    }
+    makeSquare() {
+        return `<rect x="${this.x}" y="${this.y}" width="${this.sidelength}" height="${this.sidelength}" />`;
     }
 };
 

@@ -11,11 +11,6 @@ const circle = new Circle(50, 50, 30);
 const triangle = new Triangle(50, 10, 85, 90, 15, 90);
 const square = new Square(30, 30, 50);
 
-const generateSVG = () =>  //function that will eventually create the logo
-    `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-    ${square.makeSquare()}
-    </svg>`;
-
 inquirer
     .prompt([
     {
@@ -41,7 +36,26 @@ inquirer
         message: 'What color will the shape be?'
     }
 ]).then((data) => {
-    const svgContent = generateSVG(data); //makes file with user input
-
-    fs.writeFile('./examples/logo.svg', svgContent, (err) => err ? console.log(err) : console.log('Generated logo.svg')); //creates actual svg file in the examples folder
+    if (data.shape === 'Circle') {
+        const generateSVG = () =>  //function that will eventually create the logo
+            `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+            ${circle.makeCircle()}
+            </svg>`;
+        const svgContent = generateSVG(data);
+        fs.writeFile('./examples/logo.svg', svgContent, (err) => err ? console.log(err) : console.log('Generated logo.svg')); //creates actual svg file in the examples folder
+    } else if (data.shape === 'Triangle') {
+        const generateSVG = () =>  //function that will eventually create the logo
+            `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+            ${triangle.makeTriangle()}
+            </svg>`;
+        const svgContent = generateSVG(data);
+        fs.writeFile('./examples/logo.svg', svgContent, (err) => err ? console.log(err) : console.log('Generated logo.svg')); //creates actual svg file in the examples folder
+    } else if (data.shape === 'Square') {
+        const generateSVG = () =>  //function that will eventually create the logo
+            `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+            ${square.makeSquare()}
+            </svg>`;
+        const svgContent = generateSVG(data);
+        fs.writeFile('./examples/logo.svg', svgContent, (err) => err ? console.log(err) : console.log('Generated logo.svg')); //creates actual svg file in the examples folder
+    }
 });

@@ -72,7 +72,7 @@ inquirer
 
         const svgContent = generateSVG(data); //fills svgContent with the generateSVG function using the data object
 
-        fs.writeFile('./examples/logo.svg', svgContent, (err) => err ? console.log(err) : console.log('Generated logo.svg')); //creates actual svg file in the examples folder
+        fs.writeFile('./example/logo.svg', svgContent, (err) => err ? console.log(err) : console.log('Generated logo.svg')); //creates actual svg file in the examples folder
 
     } else if (data.shape === 'Triangle') { //if the shape is a triangle, runs function related to making my triangle
 
@@ -89,7 +89,7 @@ inquirer
 
         const svgContent = generateSVG(data); //fills svgContent with the generateSVG function using the data object
 
-        fs.writeFile('./examples/logo.svg', svgContent, (err) => err ? console.log(err) : console.log('Generated logo.svg')); //creates actual svg file in the examples folder
+        fs.writeFile('./example/logo.svg', svgContent, (err) => err ? console.log(err) : console.log('Generated logo.svg')); //creates actual svg file in the examples folder
 
     } else if (data.shape === 'Square') { //if the shape is a square, runs function related to making my square
 
@@ -106,6 +106,6 @@ inquirer
 
         const svgContent = generateSVG(data); //fills svgContent with the generateSVG function using the data object
 
-        fs.writeFile('./examples/logo.svg', svgContent, (err) => err ? console.log(err) : console.log('Generated logo.svg')); //creates actual svg file in the examples folder
+        fs.writeFile('./example/logo.svg', svgContent, (err) => err ? console.log(err) : console.log('Generated logo.svg')); //creates actual svg file in the examples folder
     }
 });

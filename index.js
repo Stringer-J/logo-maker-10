@@ -26,7 +26,14 @@ inquirer
     {
         type: 'input',
         name: 'textColor',
-        message: 'What color will the text be?'
+        message: 'What color will the text be?',
+        validate: function(value) { //checks for color name or hexidecimal codes, whichever you want to use
+            if (/^#([0-9a-fA-F]{3}){1,2}|[a-zA-Z]+$/.test(value)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
     },
     {
         type: 'list',
@@ -37,7 +44,14 @@ inquirer
     {
         type: 'input',
         name: 'shapeColor',
-        message: 'What color will the shape be?'
+        message: 'What color will the shape be?',
+        validate: function(value) { //checks for color name or hexidecimal codes, whichever you want to use
+            if (/^#([0-9a-fA-F]{3}){1,2}|[a-zA-Z]+$/.test(value)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
     }
 ]).then((data) => { //takes info and puts it in an object called data
 

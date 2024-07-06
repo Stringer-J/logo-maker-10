@@ -14,15 +14,15 @@
     -file should be called 'logo.svg' DONE
     -output text 'Generated logo.svg' is printed in command line DONE
 
-6. File size should be 300x200 px
+6. File size should be 300x200 px DONE
 
 7. Install Jest DONE
     -figure out how to use it
 
-8. Need to make the shape bigger
+8. Need to make the shape bigger DONE
 
-9. Need to change color of shape
+9. Need to change color of shape DONE
 
-10. Need to put text on shape
+10. Need to put text on shape DONE
 
-11. Need to change color of text
+11. Need to change color of text DONE

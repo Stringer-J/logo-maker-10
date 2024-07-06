@@ -8,7 +8,7 @@
     -list should only contain circle, triangle, square DONE
 
 4. Prompt for shape's color DONE
-    -color keyword or hexidecimal number
+    -color keyword or hexidecimal number DONE
 
 5. Create SVG file DONE
     -file should be called 'logo.svg' DONE

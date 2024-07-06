@@ -1,9 +1,9 @@
 <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
             <style>
-                circle { fill: #0000FF; }
+                circle { fill: weeps; }
             </style>
             <circle cx="150" cy="100" r="80" />
-            <text x="50%" y="52.5%" dominant-baseline="middle" text-anchor="middle" fill="red" font-size="50">
-                BOB
+            <text x="50%" y="52.5%" dominant-baseline="middle" text-anchor="middle" fill="blark" font-size="50">
+                red
             </text>
             </svg>

@@ -31,7 +31,7 @@ inquirer
             if (/^#([0-9a-fA-F]{3}){1,2}|[a-zA-Z]+$/.test(value)) {
                 return true;
             } else {
-                return false;
+                return 'please insert color or hexidecimal code';
             }
         }
     },
@@ -49,7 +49,7 @@ inquirer
             if (/^#([0-9a-fA-F]{3}){1,2}|[a-zA-Z]+$/.test(value)) {
                 return true;
             } else {
-                return false;
+                return 'please insert color or hexidecimal code';
             }
         }
     }

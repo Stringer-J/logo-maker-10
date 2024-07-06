@@ -2,7 +2,7 @@
     -should cap text at 3 characters DONE
 
 2. Prompt for text color DONE
-    -color keyword or hexidecimal number
+    -color keyword or hexidecimal number DONE
     
 3. Prompt for a shape DONE
     -list should only contain circle, triangle, square DONE

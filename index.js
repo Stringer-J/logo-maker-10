@@ -1,11 +1,11 @@
-//let's me use inquirer to ask questions
+//lets me use inquirer to ask questions
 const inquirer = require('inquirer');
 
 //next two lines add type to inquirer that limits length of response for the input type
 const MaxLengthInputPrompt = require('inquirer-maxlength-input-prompt');
 inquirer.registerPrompt('maxlength-input', MaxLengthInputPrompt);
 
-//let's me use fs so that I can write file later
+//lets me use fs so that I can write file later
 const fs = require('fs');
 
 //imports the three classes I made in the shapes file and then creates new instances of each class

@@ -1,6 +1,7 @@
 <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-            <rect x="75" y="50" width="150" height="150" />
-            <text x="50.5%" y="65%" dominant-baseline="middle" text-anchor="middle" fill="red" font-size="50">
+            <style>circle{fill: blue;}</style>
+            <circle cx="150" cy="100" r="80" />
+            <text x="50.5%" y="52.5%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="50">
                 RED
             </text>
             </svg>

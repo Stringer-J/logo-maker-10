@@ -42,9 +42,11 @@ inquirer
     if (data.shape === 'Circle') {
         const generateSVG = () =>  //function that will eventually create the logo
             `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-            <style>circle{fill: ${data.shapeColor};}</style>
+            <style>
+                circle { fill: ${data.shapeColor}; }
+            </style>
             ${circle.makeCircle()}
-            <text x="50.5%" y="52.5%" dominant-baseline="middle" text-anchor="middle" fill="${data.textColor}" font-size="${textSize}">
+            <text x="50%" y="52.5%" dominant-baseline="middle" text-anchor="middle" fill="${data.textColor}" font-size="${textSize}">
                 ${data.text}
             </text>
             </svg>`;
@@ -56,6 +58,9 @@ inquirer
     } else if (data.shape === 'Triangle') {
         const generateSVG = () =>  //function that will eventually create the logo
             `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+            <style>
+                polygon { fill: ${data.shapeColor}; }
+            </style>
             ${triangle.makeTriangle()}
             <text x="50%" y="70%" dominant-baseline="middle" text-anchor="middle" fill="${data.textColor}" font-size="${textSize}">
                 ${data.text}
@@ -69,8 +74,11 @@ inquirer
     } else if (data.shape === 'Square') {
         const generateSVG = () =>  //function that will eventually create the logo
             `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+            <style>
+                rect { fill: ${data.shapeColor}; }
+            </style>
             ${square.makeSquare()}
-            <text x="50.5%" y="65%" dominant-baseline="middle" text-anchor="middle" fill="${data.textColor}" font-size="${textSize}">
+            <text x="50.5%" y="65.5%" dominant-baseline="middle" text-anchor="middle" fill="${data.textColor}" font-size="${textSize}">
                 ${data.text}
             </text>
             </svg>`;

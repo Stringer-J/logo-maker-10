@@ -17,7 +17,7 @@
 6. File size should be 300x200 px DONE
 
 7. Install Jest DONE
-    -figure out how to use it
+    -figure out how to use it DONE
 
 8. Need to make the shape bigger DONE
 

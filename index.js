@@ -56,7 +56,7 @@ inquirer
         const generateSVG = () =>  //function that will eventually create the logo
             `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
             ${triangle.makeTriangle()}
-            <text x="50%" y="65%" dominant-baseline="middle" text-anchor="middle" fill="${data.textColor}" font-size="${textSize}">
+            <text x="50%" y="70%" dominant-baseline="middle" text-anchor="middle" fill="${data.textColor}" font-size="${textSize}">
                 ${data.text}
             </text>
             </svg>`;
@@ -69,7 +69,7 @@ inquirer
         const generateSVG = () =>  //function that will eventually create the logo
             `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
             ${square.makeSquare()}
-            <text x="50%" y="63%" dominant-baseline="middle" text-anchor="middle" fill="${data.textColor}" font-size="${textSize}">
+            <text x="50.5%" y="65%" dominant-baseline="middle" text-anchor="middle" fill="${data.textColor}" font-size="${textSize}">
                 ${data.text}
             </text>
             </svg>`;

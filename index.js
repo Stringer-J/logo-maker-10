@@ -43,7 +43,7 @@ inquirer
         const generateSVG = () =>  //function that will eventually create the logo
             `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
             ${circle.makeCircle()}
-            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="${data.textColor}" font-size="${textSize}">
+            <text x="50.5%" y="52.5%" dominant-baseline="middle" text-anchor="middle" fill="${data.textColor}" font-size="${textSize}">
                 ${data.text}
             </text>
             </svg>`;
